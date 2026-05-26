@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2002-SIR Data India</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Premium Gradient Background Blob Particles -->
+    <div class="bg-blur-blob blob-1"></div>
+    <div class="bg-blur-blob blob-2"></div>
+    <div class="bg-blur-blob blob-3"></div>
+    <div class="bg-blur-blob blob-4"></div>
+
+    <div class="app-container">
+        <!-- Header Section -->
+        <header class="main-header">
+            <div class="logo-area">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-database"></i>
+                    <span class="pulse-ring"></span>
+                </div>
+                <div class="logo-text">
+                    <h1>2002-SIR <span class="accent-text">India</span></h1>
+                    <p class="tagline">State Information Resource</p>
+                </div>
+            </div>
+
+            <div class="header-actions">
+                <a href="https://github.com/mohammedrehanalam" target="_blank" class="github-profile-link" title="GitHub Developer Profile">
+                    <i class="fa-brands fa-github"></i>
+                    <span>Developer</span>
+                </a>
+            </div>
+        </header>
+
+
+        <!-- Search Console Section -->
+        <div class="search-console-container">
+            <div class="search-wrapper">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" id="search-input" placeholder="Search state, capital, or landmark..." autocomplete="off">
+                <button id="clear-search-btn" class="clear-btn" aria-label="Clear search">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="search-stats" id="search-stats">
+                Showing <span id="match-count" class="count-highlight">0</span> of <span id="total-count">0</span> states
+            </div>
+        </div>
+
+        <!-- Main State Cards Grid -->
+        <main class="main-content">
+            <div class="grid-header">
+                <h3 class="section-title">Regional SIR Resources</h3>
+                <div class="filter-pills">
+                    <button class="pill active" data-filter="all">All States</button>
+                    <button class="pill" data-filter="active">Active Work</button>
+                    <button class="pill" data-filter="pending">Pending Database</button>
+                </div>
+            </div>
+            
+            <!-- State Grid Container -->
+            <div class="states-grid" id="states-grid">
+                <!-- JavaScript will inject state cards dynamically here -->
+            </div>
+            
+            <!-- Empty State -->
+            <div class="empty-state-container" id="empty-state">
+                <div class="empty-state-icon">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                </div>
+                <h4>No Regional Database Found</h4>
+                <p>We couldn't find any state matching your query. Try searching for "Telangana", "Hyderabad", or "Taj Mahal".</p>
+                <button class="btn-primary" id="reset-search-btn">Reset Search</button>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 <strong>2002-SIR Data India</strong>.</p> <!--All rights reserved.</p>-->
+                <div class="creator-credits">
+                    <span>Developed by <strong>Mohammed Rehan Alam</strong></span>
+                    <!-- <span class="divider">|</span> -->
+                    <!-- <a href="https://mohammedrehanalam.github.io/Fetcher/" target="_blank" class="footer-link">
+                        <i class="fa-solid fa-link"></i> Telangana Fetcher
+                    </a> -->
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Main JavaScript File -->
+    <script src="app.js"></script>
+</body>
+</html>
