@@ -12,7 +12,7 @@ const STATES_DATA = [
         landmarkIcon: "fa-solid fa-archway",
         landmarkName: "Kakatiya Thoranam & IT Hub",
         tags: ["Charminar", "Golconda", "IT Hub", "Biryani"],
-        url: "https://mohammedrehanalam.github.io/Fetcher/",
+        url: "https://mohammedrehanalam.github.io/2002-SIR_Telangana/",
         status: "active",
         regionClass: "reg-south"
     },
