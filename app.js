@@ -24,8 +24,8 @@ const STATES_DATA = [
         landmarkIcon: "fa-solid fa-gopuram",
         landmarkName: "Tirupati Temple",
         tags: ["Tirupati", "Araku Valley", "Kuchipudi", "Kondapalli"],
-        url: null,
-        status: "pending",
+        url: "https://mohammedrehanalam.github.io/2002-SIR_AndhraPradesh/",
+        status: "active",
         regionClass: "reg-south"
     },
     {
