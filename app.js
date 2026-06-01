@@ -18,13 +18,25 @@ const STATES_DATA = [
     },
     {
         id: "ap",
-        name: "Andhra Pradesh",
+        name: "Andhra Pradesh - Part-1",
         capital: "Amaravati",
         desc: "Glorious historical landmarks and beautifully structured regional directories.",
         landmarkIcon: "fa-solid fa-gopuram",
         landmarkName: "Tirupati Temple",
-        tags: ["Tirupati", "Araku Valley", "Kuchipudi", "Kondapalli"],
-        url: "https://mohammedrehanalam.github.io/2002-SIR_AndhraPradesh/",
+        tags: ["Chittoor", "East Godavari", "Guntur", "Kadapa", "Krishna"],
+        url: "https://mohammedrehanalam.github.io/2002-SIR_AndhraPradesh-Part-1/",
+        status: "active",
+        regionClass: "reg-south"
+    },
+    {
+        id: "ap",
+        name: "Andhra Pradesh - Part-2",
+        capital: "Amaravati",
+        desc: "Glorious historical landmarks and beautifully structured regional directories.",
+        landmarkIcon: "fa-solid fa-gopuram",
+        landmarkName: "Tirupati Temple",
+        tags: ["Kumool", "Nellore", "Prakasam", "Srikakulam", "Visakhapatnam", "Vizianagaram", "West Godavari"],
+        url: "https://mohammedrehanalam.github.io/2002-SIR_AndhraPradesh-Part-2/",
         status: "active",
         regionClass: "reg-south"
     },
