@@ -5,16 +5,16 @@
 // --- Indian States Databases Registry ---
 const STATES_DATA = [
     {
-        id: "tg",
-        name: "Telangana",
-        capital: "Hyderabad",
-        desc: "Incredible cultural heritage and highly efficient digital records system.",
-        landmarkIcon: "fa-solid fa-archway",
-        landmarkName: "Kakatiya Thoranam & IT Hub",
-        tags: ["Charminar", "Golconda", "IT Hub", "Biryani"],
-        url: "https://mohammedrehanalam.github.io/2002-SIR_Telangana/",
+        id: "an",
+        name: "Andaman and Nicobar Islands",
+        capital: "Port Blair",
+        desc: "Pristine tropical islands and rich oceanic records.",
+        landmarkIcon: "fa-solid fa-anchor",
+        landmarkName: "Cellular Jail & Radhanagar Beach",
+        tags: ["Cellular Jail", "Radhanagar Beach", "Islands", "Scuba"],
+        url: "https://mohammedrehanalam.github.io/2002-SIR_AndamanAndNicobarIslands/",
         status: "active",
-        regionClass: "reg-south"
+        regionClass: "reg-island"
     },
     {
         id: "ap",
@@ -77,6 +77,18 @@ const STATES_DATA = [
         regionClass: "reg-east"
     },
     {
+        id: "ch",
+        name: "Chandigarh",
+        capital: "Chandigarh",
+        desc: "Masterfully planned modern capital and clean database files.",
+        landmarkIcon: "fa-solid fa-city",
+        landmarkName: "Rock Garden",
+        tags: ["Rock Garden", "Sukhna Lake", "Le Corbusier", "Clean City"],
+        url: null,
+        status: "pending",
+        regionClass: "reg-north"
+    },
+    {
         id: "cg",
         name: "Chhattisgarh",
         capital: "Raipur",
@@ -87,6 +99,30 @@ const STATES_DATA = [
         url: null,
         status: "pending",
         regionClass: "reg-central"
+    },
+    {
+        id: "dn",
+        name: "Dadra and Nagar Haveli and Daman and Diu",
+        capital: "Daman",
+        desc: "Scenic coastal forts and peaceful community listings.",
+        landmarkIcon: "fa-brands fa-fort-awesome",
+        landmarkName: "Diu Fort",
+        tags: ["Diu Fort", "Jampa Gateway", "Beaches", "Portuguese"],
+        url: null,
+        status: "pending",
+        regionClass: "reg-west"
+    },
+    {
+        id: "dl",
+        name: "Delhi",
+        capital: "New Delhi",
+        desc: "Prestigious capital region with highly detailed governance archives.",
+        landmarkIcon: "fa-solid fa-archway",
+        landmarkName: "India Gate",
+        tags: ["India Gate", "Qutub Minar", "Red Fort", "Lotus Temple"],
+        url: null,
+        status: "pending",
+        regionClass: "reg-north"
     },
     {
         id: "ga",
@@ -137,6 +173,18 @@ const STATES_DATA = [
         regionClass: "reg-north"
     },
     {
+        id: "jk",
+        name: "Jammu and Kashmir",
+        capital: "Srinagar",
+        desc: "Paradise on Earth with spectacular valley directories.",
+        landmarkIcon: "fa-solid fa-mountain",
+        landmarkName: "Dal Lake & Houseboats",
+        tags: ["Dal Lake", "Gulmarg", "Shalimar Bagh", "Pashmina"],
+        url: null,
+        status: "pending",
+        regionClass: "reg-north"
+    },
+    {
         id: "jh",
         name: "Jharkhand",
         capital: "Ranchi",
@@ -171,6 +219,30 @@ const STATES_DATA = [
         url: null,
         status: "pending",
         regionClass: "reg-south"
+    },
+    {
+        id: "la",
+        name: "Ladakh",
+        capital: "Leh",
+        desc: "Breathtaking high-altitude cold deserts and monastery folders.",
+        landmarkIcon: "fa-solid fa-dharmachakra",
+        landmarkName: "Pangong Lake",
+        tags: ["Pangong Lake", "Leh Palace", "Monasteries", "Passes"],
+        url: null,
+        status: "pending",
+        regionClass: "reg-north"
+    },
+    {
+        id: "ld",
+        name: "Lakshadweep",
+        capital: "Kavaratti",
+        desc: "Gorgeous coral archipelagos and rich marine indexes.",
+        landmarkIcon: "fa-solid fa-fish",
+        landmarkName: "Bangaram Beach",
+        tags: ["Coral Reefs", "Islands", "Kavaratti", "Coconut Gardens"],
+        url: null,
+        status: "pending",
+        regionClass: "reg-island"
     },
     {
         id: "mp",
@@ -257,6 +329,18 @@ const STATES_DATA = [
         regionClass: "reg-east"
     },
     {
+        id: "py",
+        name: "Puducherry",
+        capital: "Puducherry",
+        desc: "Charming French architectural quarters and positive regional files.",
+        landmarkIcon: "fa-solid fa-building-columns",
+        landmarkName: "Auroville Dome",
+        tags: ["Auroville", "French Quarter", "Promenade", "Beaches"],
+        url: null,
+        status: "pending",
+        regionClass: "reg-island"
+    },
+    {
         id: "pb",
         name: "Punjab",
         capital: "Chandigarh",
@@ -302,6 +386,18 @@ const STATES_DATA = [
         tags: ["Meenakshi Temple", "Marina Beach", "Ooty", "Bharatanatyam"],
         url: null,
         status: "pending",
+        regionClass: "reg-south"
+    },
+    {
+        id: "tg",
+        name: "Telangana",
+        capital: "Hyderabad",
+        desc: "Incredible cultural heritage and highly efficient digital records system.",
+        landmarkIcon: "fa-solid fa-archway",
+        landmarkName: "Kakatiya Thoranam & IT Hub",
+        tags: ["Charminar", "Golconda", "IT Hub", "Biryani"],
+        url: "https://mohammedrehanalam.github.io/2002-SIR_Telangana/",
+        status: "active",
         regionClass: "reg-south"
     },
     {
@@ -351,102 +447,6 @@ const STATES_DATA = [
         url: null,
         status: "pending",
         regionClass: "reg-east"
-    },
-    {
-        id: "an",
-        name: "Andaman and Nicobar Islands",
-        capital: "Port Blair",
-        desc: "Pristine tropical islands and rich oceanic records.",
-        landmarkIcon: "fa-solid fa-anchor",
-        landmarkName: "Cellular Jail & Radhanagar Beach",
-        tags: ["Cellular Jail", "Radhanagar Beach", "Islands", "Scuba"],
-        url: null,
-        status: "pending",
-        regionClass: "reg-island"
-    },
-    {
-        id: "ch",
-        name: "Chandigarh",
-        capital: "Chandigarh",
-        desc: "Masterfully planned modern capital and clean database files.",
-        landmarkIcon: "fa-solid fa-city",
-        landmarkName: "Rock Garden",
-        tags: ["Rock Garden", "Sukhna Lake", "Le Corbusier", "Clean City"],
-        url: null,
-        status: "pending",
-        regionClass: "reg-north"
-    },
-    {
-        id: "dn",
-        name: "Dadra and Nagar Haveli and Daman and Diu",
-        capital: "Daman",
-        desc: "Scenic coastal forts and peaceful community listings.",
-        landmarkIcon: "fa-brands fa-fort-awesome",
-        landmarkName: "Diu Fort",
-        tags: ["Diu Fort", "Jampa Gateway", "Beaches", "Portuguese"],
-        url: null,
-        status: "pending",
-        regionClass: "reg-west"
-    },
-    {
-        id: "dl",
-        name: "Delhi",
-        capital: "New Delhi",
-        desc: "Prestigious capital region with highly detailed governance archives.",
-        landmarkIcon: "fa-solid fa-archway",
-        landmarkName: "India Gate",
-        tags: ["India Gate", "Qutub Minar", "Red Fort", "Lotus Temple"],
-        url: null,
-        status: "pending",
-        regionClass: "reg-north"
-    },
-    {
-        id: "jk",
-        name: "Jammu and Kashmir",
-        capital: "Srinagar",
-        desc: "Paradise on Earth with spectacular valley directories.",
-        landmarkIcon: "fa-solid fa-mountain",
-        landmarkName: "Dal Lake & Houseboats",
-        tags: ["Dal Lake", "Gulmarg", "Shalimar Bagh", "Pashmina"],
-        url: null,
-        status: "pending",
-        regionClass: "reg-north"
-    },
-    {
-        id: "la",
-        name: "Ladakh",
-        capital: "Leh",
-        desc: "Breathtaking high-altitude cold deserts and monastery folders.",
-        landmarkIcon: "fa-solid fa-dharmachakra",
-        landmarkName: "Pangong Lake",
-        tags: ["Pangong Lake", "Leh Palace", "Monasteries", "Passes"],
-        url: null,
-        status: "pending",
-        regionClass: "reg-north"
-    },
-    {
-        id: "ld",
-        name: "Lakshadweep",
-        capital: "Kavaratti",
-        desc: "Gorgeous coral archipelagos and rich marine indexes.",
-        landmarkIcon: "fa-solid fa-fish",
-        landmarkName: "Bangaram Beach",
-        tags: ["Coral Reefs", "Islands", "Kavaratti", "Coconut Gardens"],
-        url: null,
-        status: "pending",
-        regionClass: "reg-island"
-    },
-    {
-        id: "py",
-        name: "Puducherry",
-        capital: "Puducherry",
-        desc: "Charming French architectural quarters and positive regional files.",
-        landmarkIcon: "fa-solid fa-building-columns",
-        landmarkName: "Auroville Dome",
-        tags: ["Auroville", "French Quarter", "Promenade", "Beaches"],
-        url: null,
-        status: "pending",
-        regionClass: "reg-island"
     }
 ];
 
@@ -554,7 +554,7 @@ function renderCards(states, query = "") {
 
 // Filter and search execution logic
 function updateGrid() {
-    let filtered = STATES_DATA;
+    let filtered = [...STATES_DATA];
 
     // 1. Filter by category pills
     if (currentFilter === "active") {
@@ -577,6 +577,13 @@ function updateGrid() {
     } else {
         clearSearchBtn.style.display = "none";
     }
+
+    // 3. Sort logic: Active on top, alphabetical within each status group
+    filtered.sort((a, b) => {
+        if (a.status === "active" && b.status !== "active") return -1;
+        if (a.status !== "active" && b.status === "active") return 1;
+        return a.name.localeCompare(b.name);
+    });
 
     // Update Counter indicators
     matchCountSpan.textContent = filtered.length;
