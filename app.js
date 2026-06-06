@@ -48,8 +48,8 @@ const STATES_DATA = [
         landmarkIcon: "fa-solid fa-mountain",
         landmarkName: "Tawang Monastery",
         tags: ["Tawang", "Namdapha", "Ziro", "Monastery"],
-        url: null,
-        status: "pending",
+        url: "https://mohammedrehanalam.github.io/2002-SIR_ArunachalPradesh/",
+        status: "active",
         regionClass: "reg-northeast"
     },
     {
