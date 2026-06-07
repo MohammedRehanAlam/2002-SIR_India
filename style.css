@@ -7,9 +7,9 @@
     /* Color Palette - Premium India Tricolor Theme */
     --bg-dark: #060913;
     /* Rich deep navy blue space background */
-    --bg-card: rgba(13, 22, 42, 0.6);
-    /* Translucent dark navy cards */
-    --bg-card-hover: rgba(22, 35, 64, 0.75);
+    --bg-card: rgba(10, 17, 33, 0.92);
+    /* Opaque dark navy cards for maximum rendering performance */
+    --bg-card-hover: rgba(16, 26, 48, 0.96);
     --border-color: rgba(255, 255, 255, 0.08);
     --border-color-hover: rgba(255, 153, 51, 0.25);
     /* Warm Saffron glow on hover */
@@ -63,24 +63,8 @@ html {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-    /* Deep, highly vibrant tricolor space base gradient with animated shift */
+    /* Deep, highly vibrant tricolor space base gradient */
     background: linear-gradient(135deg, #180902 0%, #050915 35%, #080f1a 65%, #011308 100%);
-    background-size: 200% 200%;
-    animation: bg-glow-shift 25s infinite ease-in-out;
-}
-
-@keyframes bg-glow-shift {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
 }
 
 body {
@@ -112,52 +96,24 @@ body {
     width: 600px;
     height: 600px;
     background: radial-gradient(circle, var(--color-saffron) 0%, rgba(255, 133, 27, 0) 70%);
-    animation: float-blob-1 20s infinite alternate ease-in-out;
 }
 
 .blob-2 {
     width: 600px;
     height: 600px;
     background: radial-gradient(circle, var(--color-green) 0%, rgba(16, 185, 129, 0) 70%);
-    animation: float-blob-2 24s infinite alternate ease-in-out;
 }
 
 .blob-3 {
     width: 500px;
     height: 500px;
     background: radial-gradient(circle, var(--color-chakra) 0%, rgba(37, 99, 235, 0) 70%);
-    animation: float-blob-3 22s infinite alternate ease-in-out;
 }
 
 .blob-4 {
     width: 400px;
     height: 400px;
     background: radial-gradient(circle, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0) 70%);
-    animation: float-blob-4 18s infinite alternate ease-in-out;
-}
-
-@keyframes float-blob-1 {
-    0% { transform: translate(0, 0) scale(1); }
-    50% { transform: translate(140px, 90px) scale(1.15); }
-    100% { transform: translate(-90px, -140px) scale(0.9); }
-}
-
-@keyframes float-blob-2 {
-    0% { transform: translate(0, 0) scale(0.9); }
-    50% { transform: translate(-160px, 120px) scale(1.12); }
-    100% { transform: translate(110px, -90px) scale(1); }
-}
-
-@keyframes float-blob-3 {
-    0% { transform: translate(0, 0) scale(1.05); }
-    50% { transform: translate(100px, -160px) scale(0.88); }
-    100% { transform: translate(-120px, 100px) scale(1.1); }
-}
-
-@keyframes float-blob-4 {
-    0% { transform: translate(0, 0) scale(0.95); }
-    50% { transform: translate(-110px, -130px) scale(1.18); }
-    100% { transform: translate(130px, 110px) scale(0.9); }
 }
 
 /* --- App Container --- */
@@ -203,63 +159,16 @@ body {
 }
 
 .logo-icon i {
-    animation: logo-icon-glow 6s infinite alternate ease-in-out;
-}
-
-@keyframes logo-icon-glow {
-    0% {
-        color: var(--color-saffron);
-        text-shadow: 0 0 12px rgba(255, 133, 27, 0.6);
-    }
-
-    50% {
-        color: #ffffff;
-        text-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
-    }
-
-    100% {
-        color: var(--color-green);
-        text-shadow: 0 0 12px rgba(16, 185, 129, 0.6);
-    }
+    color: var(--color-saffron);
+    text-shadow: 0 0 8px rgba(255, 133, 27, 0.4);
 }
 
 .pulse-ring {
     position: absolute;
     width: 100%;
     height: 100%;
-    border: 1.5px solid rgba(255, 133, 27, 0.4);
+    border: 1.5px solid rgba(255, 133, 27, 0.3);
     border-radius: 14px;
-    animation: ring-pulse 2.5s infinite ease-out;
-}
-
-@keyframes ring-pulse {
-    0% {
-        transform: scale(1);
-        opacity: 1;
-        border-color: rgba(255, 133, 27, 0.65);
-        /* Saffron */
-        box-shadow: 0 0 8px rgba(255, 133, 27, 0.35);
-    }
-
-    33% {
-        border-color: rgba(255, 255, 255, 0.8);
-        /* White */
-        box-shadow: 0 0 12px rgba(255, 255, 255, 0.45);
-    }
-
-    66% {
-        border-color: rgba(16, 185, 129, 0.65);
-        /* Green */
-        box-shadow: 0 0 8px rgba(16, 185, 129, 0.35);
-    }
-
-    100% {
-        transform: scale(1.45);
-        opacity: 0;
-        border-color: rgba(37, 99, 235, 0.5);
-        /* Ashoka Blue */
-        box-shadow: 0 0 10px rgba(37, 99, 235, 0.25);
-    }
 }
 
 .logo-text h1 {
@@ -317,7 +226,7 @@ body {
 .search-console-container #search-input {
     width: 100%;
     padding: 1.1rem 3.8rem 1.1rem 3.5rem;
-    background: rgba(15, 23, 42, 0.45);
+    background: rgba(15, 23, 42, 0.85);
     border: 1.5px solid var(--border-color);
     border-radius: 35px;
     color: var(--text-primary);
@@ -325,13 +234,12 @@ body {
     font-size: 1.05rem;
     outline: none;
     transition: var(--transition-smooth);
-    backdrop-filter: blur(12px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
 }
 
 .search-console-container #search-input:focus {
     border-color: rgba(255, 255, 255, 0.85);
-    background: rgba(15, 23, 42, 0.75);
+    background: rgba(15, 23, 42, 0.95);
     box-shadow: 0 0 0 2.5px var(--color-saffron), 0 0 0 5px rgba(255, 255, 255, 0.8), 0 0 0 7.5px var(--color-green), 0 8px 32px rgba(0, 0, 0, 0.4), inset 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -383,7 +291,7 @@ body {
     display: flex;
     align-items: center;
     gap: 0.6rem;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.08);
     border: 1px solid var(--border-color);
     padding: 0.7rem 1.2rem;
     border-radius: 20px;
@@ -392,7 +300,6 @@ body {
     font-weight: 500;
     font-size: 0.85rem;
     transition: var(--transition-smooth);
-    backdrop-filter: blur(8px);
 }
 
 .github-profile-link:hover {
@@ -413,11 +320,10 @@ body {
     align-items: center;
     gap: 3rem;
     margin-bottom: 4rem;
-    background: linear-gradient(145deg, rgba(15, 22, 38, 0.35) 0%, rgba(5, 8, 16, 0.2) 100%);
+    background: linear-gradient(145deg, rgba(15, 22, 38, 0.85) 0%, rgba(5, 8, 16, 0.7) 100%);
     border: 1px solid var(--border-color);
     border-radius: 24px;
     padding: 3rem;
-    backdrop-filter: blur(12px);
     position: relative;
     overflow: hidden;
 }
@@ -616,8 +522,6 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
     transition: var(--transition-bounce);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
@@ -653,39 +557,13 @@ body {
 }
 
 /* Pulse glow animation for active portals in default state */
-@keyframes activePulse {
-    0%, 100% {
-        border-color: rgba(255, 133, 27, 0.25);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 0 5px rgba(255, 133, 27, 0.15);
-    }
-    16.6% {
-        border-color: rgba(255, 133, 27, 0.65);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 0 15px rgba(255, 133, 27, 0.35);
-    }
-    33.3% {
-        border-color: rgba(255, 255, 255, 0.25);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 0 5px rgba(255, 255, 255, 0.15);
-    }
-    50% {
-        border-color: rgba(255, 255, 255, 0.75);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 0 15px rgba(255, 255, 255, 0.35);
-    }
-    66.6% {
-        border-color: rgba(16, 185, 129, 0.25);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 0 5px rgba(16, 185, 129, 0.15);
-    }
-    83.3% {
-        border-color: rgba(16, 185, 129, 0.65);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 0 15px rgba(16, 185, 129, 0.35);
-    }
-}
-
 .state-card.active-work {
-    animation: activePulse 12s infinite ease-in-out;
+    border-color: rgba(255, 133, 27, 0.35);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25), 0 0 8px rgba(255, 133, 27, 0.12);
 }
 
 .state-card.active-work:hover {
-    animation: none;
+    box-shadow: 0 15px 40px rgba(255, 133, 27, 0.22), 0 0 12px rgba(255, 133, 27, 0.18);
 }
 
 /* --- Card Background Graphic Section --- */
@@ -774,8 +652,7 @@ body {
     display: flex;
     align-items: center;
     gap: 0.4rem;
-    background: rgba(0, 0, 0, 0.45);
-    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.75);
     border: 1px solid rgba(255, 255, 255, 0.12);
     padding: 0.35rem 0.8rem;
     border-radius: 20px;
@@ -958,11 +835,10 @@ body {
     align-items: center;
     justify-content: center;
     padding: 5rem 2rem;
-    background: rgba(15, 22, 38, 0.25);
+    background: rgba(15, 22, 38, 0.85);
     border: 1px dashed var(--border-color);
     border-radius: 24px;
     text-align: center;
-    backdrop-filter: blur(10px);
     display: none;
     /* Controlled by JS */
 }
