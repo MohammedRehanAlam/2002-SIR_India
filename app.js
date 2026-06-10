@@ -96,8 +96,8 @@ const STATES_DATA = [
         landmarkIcon: "fa-solid fa-tree",
         landmarkName: "Chitrakote Falls",
         tags: ["Chitrakote", "Bastar", "Temples", "Forests"],
-        url: null,
-        status: "pending",
+        url: "https://ceochandigarh.gov.in/pages/intensive",
+        status: "active",
         regionClass: "reg-central"
     },
     {
@@ -108,8 +108,8 @@ const STATES_DATA = [
         landmarkIcon: "fa-brands fa-fort-awesome",
         landmarkName: "Diu Fort",
         tags: ["Diu Fort", "Jampa Gateway", "Beaches", "Portuguese"],
-        url: null,
-        status: "pending",
+        url: "https://ceodaman.nic.in/IntensiveSR2002.aspx",
+        status: "active",
         regionClass: "reg-west"
     },
     {
@@ -144,8 +144,8 @@ const STATES_DATA = [
         landmarkIcon: "fa-solid fa-landmark",
         landmarkName: "Statue of Unity",
         tags: ["Statue of Unity", "Gir Forest", "Garba", "Rann of Kutch"],
-        url: null,
-        status: "pending",
+        url: "https://erms.gujarat.gov.in/ceo-gujarat/master/voterlist2002.aspx",
+        status: "active",
         regionClass: "reg-west"
     },
     {
@@ -180,8 +180,8 @@ const STATES_DATA = [
         landmarkIcon: "fa-solid fa-mountain",
         landmarkName: "Dal Lake & Houseboats",
         tags: ["Dal Lake", "Gulmarg", "Shalimar Bagh", "Pashmina"],
-        url: null,
-        status: "pending",
+        url: "https://ceo.jk.gov.in/namesearch/",
+        status: "active",
         regionClass: "reg-north"
     },
     {
@@ -192,8 +192,8 @@ const STATES_DATA = [
         landmarkIcon: "fa-solid fa-gem",
         landmarkName: "Hundru Falls",
         tags: ["Hundru", "Jamshedpur", "Deoghar", "Minerals"],
-        url: null,
-        status: "pending",
+        url: "https://ceojh.jharkhand.gov.in/mrollpdf1/aceng.aspx",
+        status: "active",
         regionClass: "reg-east"
     },
     {
@@ -204,8 +204,8 @@ const STATES_DATA = [
         landmarkIcon: "fa-solid fa-place-of-worship",
         landmarkName: "Hampi Ruins & Silicon Valley",
         tags: ["Hampi", "Mysore Palace", "Silicon Valley", "Western Ghats"],
-        url: null,
-        status: "pending",
+        url: "https://ceo.karnataka.gov.in/search/en",
+        status: "active",
         regionClass: "reg-south"
     },
     {
@@ -420,8 +420,8 @@ const STATES_DATA = [
         landmarkIcon: "fa-solid fa-landmark",
         landmarkName: "Taj Mahal & Varanasi Ghats",
         tags: ["Taj Mahal", "Varanasi Ghats", "Sangam", "Awadhi Culture"],
-        url: null,
-        status: "pending",
+        url: "https://ceouttarpradesh.nic.in/rollpdf/rollpdf.aspx",
+        status: "active",
         regionClass: "reg-central"
     },
     {
@@ -432,8 +432,8 @@ const STATES_DATA = [
         landmarkIcon: "fa-solid fa-peace",
         landmarkName: "Valley of Flowers",
         tags: ["Kedarnath", "Rishikesh", "Nainital", "Ganges"],
-        url: null,
-        status: "pending",
+        url: "https://election.uk.gov.in/search2003uk",
+        status: "active",
         regionClass: "reg-north"
     },
     {
@@ -444,14 +444,14 @@ const STATES_DATA = [
         landmarkIcon: "fa-solid fa-bridge",
         landmarkName: "Howrah Bridge & Darjeeling",
         tags: ["Howrah Bridge", "Darjeeling", "Sundarbans", "Rosogolla"],
-        url: null,
-        status: "pending",
+        url: "https://ceowestbengal.wb.gov.in/roll_dist",
+        status: "active",
         regionClass: "reg-east"
     }
 ];
 
 // --- App State ---
-let currentFilter = "all"; // all, active, pending
+let currentFilter = "active"; // all, active, pending
 let currentSearchQuery = "";
 
 // --- DOM Elements ---
