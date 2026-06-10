@@ -60,8 +60,8 @@ const STATES_DATA = [
         landmarkIcon: "fa-solid fa-leaf",
         landmarkName: "Kaziranga Park",
         tags: ["Kaziranga", "Bihu", "Tea Gardens", "Kamakhya"],
-        url: null,
-        status: "pending",
+        url: "https://mohammedrehanalam.github.io/2002-SIR_Assam/",
+        status: "active",
         regionClass: "reg-northeast"
     },
     {
